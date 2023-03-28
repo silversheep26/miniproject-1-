@@ -147,7 +147,7 @@
             width: 500px;
             height: auto;
 
-            z-index: 60;
+            z-index: 100;
             top: 30%;
             left: 25%;
         }
@@ -162,9 +162,6 @@
 
             border: 3px solid;
             border-radius: 10px;
-            z-index: 80;
-
-
 
         }
 
@@ -217,7 +214,7 @@
         <div class="wave"></div>
         <div class="wave"></div>
     </div>
-    
+
     <div class="fandb">
         <div class="flip">
             <div class="card">
