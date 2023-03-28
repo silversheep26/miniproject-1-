@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function button1_click() {
+            console.log("버튼1을 누르셨습니다.");
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        * {
+            font-family: 'Gowun Dodum', sans-serif
+        }
+
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background: radial-gradient(ellipse at center, rgba(255, 254, 234, 1) 0%, rgba(255, 254, 234, 1) 35%, #B7E8EB 100%);
+            overflow: hidden;
+        }
+
+        .ocean {
+            height: 5%;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: #015871;
+        }
+
+        .wave {
+            background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+            position: absolute;
+            top: -198px;
+            width: 6400px;
+            height: 198px;
+            animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+            transform: translate3d(0, 0, 0);
+        }
+
+        .wave:nth-of-type(2) {
+            top: -175px;
+            animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+            opacity: 1;
+        }
+
+        @keyframes wave {
+            0% {
+                margin-left: 0;
+            }
+
+            100% {
+                margin-left: -1600px;
+            }
+        }
+
+        @keyframes swell {
+
+            0%,
+            100% {
+                transform: translate3d(0, -25px, 0);
+            }
+
+            50% {
+                transform: translate3d(0, 5px, 0);
+            }
+        }
+
+
+        .photos {
+            /* background-color: green; */
+            position: relative;
+            width: 1920px;
+            height: 1080px;
+        }
+
+        #title {
+            /* background-color: green; */
+            width: 500px;
+
+            position: absolute;
+
+            top: 13%;
+            left: 37%;
+
+            /* z-index: 100; */
+
+            color: black;
+            font-size: 50px;
+            text-align: center;
+
+        }
+
+
+        #hijinee {
+
+            position: absolute;
+
+            width: 15%;
+
+            z-index: 80;
+            top: 21%;
+            left: 53%;
+
+        }
+
+        #subtitle {
+            position: absolute;
+
+            top: 61%;
+            left: 48%;
+
+            width: 470px;
+
+            border: 2px solid;
+            border-radius: 50px;
+            background-color: white;
+
+            text-align: center;
+
+            font-size: 40px;
+
+            z-index: 100;
+
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+            font-family: Pretendard;
+
+        }
+
+        .fandb {
+            position: absolute;
+
+            /* background-color: yellow; */
+            width: 500px;
+            height: auto;
+
+            z-index: 100;
+            top: 30%;
+            left: 25%;
+        }
+
+        .flip {
+            width: 400px;
+            height: 80px;
+            /* position: relative; */
+            perspective: 1100px;
+            margin: 2rem;
+
+
+            /* border: 3px solid; */
+            border-radius: 10px;
+
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            /* position: relative; */
+            transition: .4s;
+            transform-style: preserve-3d;
+
+        }
+
+        .front,
+        .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .front {
+            /* background: tomato; */
+            background-image: url(http://file3.instiz.net/data/file3/2023/01/04/7/a/a/7aa5a2277a618ccae41aacdc582972a7.jpg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-position: center;
+            background-size: cover;
+        }
+
+        .back {
+            background: royalblue;
+            transform: rotateY(180deg);
+        }
+
+        .flip:hover .card {
+            transform: rotateY(180deg);
+        }
+
+        button.btn {
+            position: absolute;
+            top: 25%;
+            left: 45%;
+            z-index: 100;
+
+            border-radius: 20px;
+            border-color:  #015871;
+
+            background-color: #015871;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+    <div class="fandb">
+        <div class="flip">
+            <div class="card">
+                <!-- 앞면 -->
+                <div class="front">
+                    <h1>오늘 미세먼지는</h1>
+                </div>
+                <!-- 뒷면 -->
+                <div class="back">
+                    <h1>몰라임마</h1>
+                </div>
+            </div>
+        </div>
+        <div class="flip">
+            <div class="card">
+                <!-- 앞면 -->
+                <div class="front">
+                    <h1>오늘 온도는</h1>
+                </div>
+                <!-- 뒷면 -->
+                <div class="back">
+                    <h1>내가 알겠냐</h1>
+                </div>
+            </div>
+        </div>
+        <div class="flip">
+            <div class="card">
+                <!-- 앞면 -->
+                <div class="front">
+                    <h1>오늘 강수량은</h1>
+                </div>
+                <!-- 뒷면 -->
+                <div class="back">
+                    <h1>걍 우산 들고가</h1>
+                </div>
+            </div>
+        </div>
+        <div class="flip">
+            <div class="card">
+                <!-- 앞면 -->
+                <div class="front">
+                    <h1>오늘은 뭐가 필요할까</h1>
+                </div>
+                <!-- 뒷면 -->
+                <div class="back">
+                    <h1>바보</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="photos">
+            <div id="title">연진아 날씨 어때?</div>
+            <img src="https://github.com/silversheep26/miniproject-1-/blob/main/image/yeonjinkill.png?raw=true"
+                id="hijinee">
+            <div id="subtitle"> 선크림 잘 챙겨~ㅎ </div>
+        </div>
+        <div id="mybtn">
+            <button type="button" class="btn btn-primary btn-lg" onclick="location.href='firstpage_upgrad.html'">다른 지역 보기</button>
+        </div>
+    </div>
+</body>
+
+</html>
