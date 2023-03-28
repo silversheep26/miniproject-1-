@@ -76,94 +76,86 @@
             }
         }
 
-        .phtos {
-            float: left;
-            width: 255px;
-            height: 515px;
-            margin: 0 30px;
-            position: relative;
-        }
-
-        /* .frame{
-            position: absolute;
-            z-index: 100;
-            /* transition-property: ; 
+        /* .photos {
 
         } */
 
-
-        .title {
+        .photos {
             /* background-color: green; */
-            position: absolute;
+            position: relative;
+            width: 1920px;
+            height: 1080px;; 
+        }
+
+        #title {
+            /* background-color: green; */
             width: 500px;
 
-            top: 15%;
+            position: absolute;
+
+            top: 13%;
             left: 40%;
+
+            /* z-index: 100; */
 
             color: black;
             font-size: 50px;
         }
 
-        .Ryeonjineesit {
+
+        #Ryeonjineesit{
+
             position: absolute;
-            top: 30%;
-            left: 53%;
-        }
 
-
-
-        .seoul {
-            position: absolute;
+            z-index: 80;
             top: 25%;
-            left: 25%;
+            left: 48%;
+
         }
 
-        .subtitle {
+        #subtitle {
+            position: absolute;
+
+            top: 61%;
+            left: 48%;
+            
+            width: 470px;
+
             border: 2px solid;
             border-radius: 50px;
             background-color: white;
 
             font-size: 40px;
+
+            z-index: 100;
+
+        }
+
+        #seoul {
             position: absolute;
-            top: 72%;
-            left: 53%;
+            /* transform: translate(60%, 20%); */
+            top: 25%;
+            left: 22%;
+            z-index: 60;
+
         }
     </style>
 
 </head>
 
 <body>
-    <iframe class="frame" src="https://www.youtube.com/embed/l2_pbj39xC8?autoplay=1"  width="100%" height="100%" frameborder="0" allow="autoplay"></iframe>
-
     <div class="ocean">
         <div class="wave"></div>
         <div class="wave"></div>
     </div>
-
     <div class="photos">
-
-        <div class="title">연진아 날씨 어때?</div>
-        <img src="https://raw.githubusercontent.com/silversheep26/miniproject-1-/3fc98cb7ca8668e3426272756513255c64121676/image/seoul.png"
-            class="seoul">
-        <img src="https://raw.githubusercontent.com/silversheep26/miniproject-1-/3fc98cb7ca8668e3426272756513255c64121676/image/y.png">
-        <div class="subtitle"> 동은아 지역을 클릭해줘~ㅎ </div>
-
+        <div id="title">연진아 날씨 어때?</div>
+        <img src="https://raw.githubusercontent.com/silversheep26/miniproject-1-/ad69428a793827114543810b95698d0948198f49/seoul.png"
+            id="seoul">
+        <img src="https://raw.githubusercontent.com/silversheep26/miniproject-1-/3fc98cb7ca8668e3426272756513255c64121676/image/y.png" id="Ryeonjineesit">
+        <div id="subtitle"> 동은아 지역을 클릭해줘~ㅎ </div>
     </div>
 
-    </div>
-    </div>
-    </div>
 </body>
 
 </html>
-
-
-
-
-
-
-<!-- setInterval(function(){
-    if($(".video").prop("ended")){
-      //영상종료 후 진행할 함수 입력부분
-    }
-  },200); -->
