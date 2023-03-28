@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>연진이</title>
+    <style>
+        html,
+        body {
+            overflow: hidden;
+        }
+
+        .video {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <div class="video">
+        <iframe width="600" height="600" src="https://www.youtube.com/embed/l2_pbj39xC8?autoplay=1" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</body>
+
+</html>
