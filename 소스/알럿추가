@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>연진이</title>
+    <style>
+        html,
+        body {
+            overflow: hidden;
+        }
+
+        .video {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                alert('야 날씨 알려줄테니 끄덕여 ㅋ');
+                window.close();
+            }, 6000);
+        };
+    </script>
+</head>
+
+<body>
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/l2_pbj39xC8?autoplay=1&loop=1" width="100%" height="1000"
+            frameborder="0" allow="autoplay"></iframe>
+
+        </iframe>
+    </div>
+</body>
+
+</html>
