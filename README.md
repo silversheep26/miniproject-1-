@@ -1,36 +1,40 @@
-# miniproject-1-
-항해 99 미니 프로젝트 
+# 연진아 날씨 어때? 🐱‍🏍
+항해 99 미니 프로젝트 (25조)
+---
 
 
-<!DOCTYPE html>
-<html lang="en">
+### 1. 제작 기간 및 팀원 소개 
+---
++ 2023.03.27 ~ 2023.03.30
++ 5인 1조 팀 미니 프로젝트 
+    이호정 : 날씨 API
+    박우현 : 날씨 API
+    김은서 : 전체 페이지 CSS
+    김근보 : 전체 페이지 CSS
+    김은양 : 전체 페이지 CSS
+    
 
-<head>
-    <title>연진이</title>
-    <style>
-        html, body { overflow: hidden; }
-        .video {
-            height: 100%;
-            width: 100%;
-        }
-    </style>
-    <script>
-      window.onload = function() {
-        const video = document.getElementById("my-video");
-        video.addEventListener('ended', function() {
-          alert('동영상이 종료됩니다.');
-          window.onbeforeunload = function() {
-            return '이 페이지를 나가시겠습니까?';
-          };
-        });
-      };
-    </script>
-</head>
+### 2. 사용 기술
+---
++ python
++ JSON
++ JQuery
 
-<body>
-    <div class="video">
-        <iframe id="my-video" src="https://www.youtube.com/embed/l2_pbj39xC8?autoplay=1&loop=1" width="600" height="600" frameborder="0" allow="autoplay"></iframe>
-    </div>
-</body>
 
-</html>
+### 3. 실행 화면
+---
+
+자세한 영상 : https://youtu.be/mVcP2YTTNzo
+
+
+### 4. 핵심 기능
+---
++ 전국 도 및 광역시의 구름의 양, 최고 온도 및 최저 온도
++ 반응형 이미지 앱
++ 전국 날씨와 지도 연동
++ 
++ 
+
+
+
+
