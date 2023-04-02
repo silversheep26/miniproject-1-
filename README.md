@@ -32,7 +32,7 @@
 ### 3. 실행 화면
 ---
 유튜브 : https://youtu.be/mVcP2YTTNzo  
-주소: http://hohomii.shop:8000/map
+주소: http://hohomii.shop
 
 <br/>
 <br/>
